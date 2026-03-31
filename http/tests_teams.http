@@ -1,0 +1,39 @@
+# POST TEAM
+POST http://localhost:8000/teams
+Content-Type: application/json
+
+{
+    "name": "Real Oviedo",
+    "country": "Spain"
+}
+
+
+
+###
+# GET ALL TEAMS
+GET http://localhost:8000/teams
+
+
+###
+# GET TEAM BY ID
+GET http://localhost:8000/teams/69c7207899ba033fd6bb2d62
+
+###
+# GET TEAM BY WRONG ID
+GET http://localhost:8000/teams/69c7207899ba033fd6bb2d6
+
+
+###
+# UPDATE TEAM BY ID
+PUT http://localhost:8000/teams/69c7d9a3cb266101bdb45278
+Content-Type: application/json
+
+{
+    "name": 32332
+}
+
+
+###
+# DELETE TEAM BY ID
+DELETE http://localhost:8000/teams/69c7d9a3cb266101bdb45294
+

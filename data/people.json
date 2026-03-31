@@ -1,0 +1,794 @@
+[
+  {
+    "type": "manager",
+    "first_name": "Vincent",
+    "last_name": "Kompany",
+    "team_id": "Bayern Munich"
+  },
+  {
+    "type": "player",
+    "first_name": "Manuel",
+    "last_name": "Neuer",
+    "team_id": "Bayern Munich",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 90,
+      "positioning": 89,
+      "distribution": 88
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Dayot",
+    "last_name": "Upamecano",
+    "team_id": "Bayern Munich",
+    "shirt_number": 2,
+    "attributes": {
+      "defense": 89,
+      "speed": 87,
+      "strength": 88
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Alphonso",
+    "last_name": "Davies",
+    "team_id": "Bayern Munich",
+    "shirt_number": 19,
+    "attributes": {
+      "speed": 92,
+      "defense": 86,
+      "stamina": 90
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Jamal",
+    "last_name": "Musiala",
+    "team_id": "Bayern Munich",
+    "shirt_number": 42,
+    "attributes": {
+      "dribbling": 92,
+      "speed": 90,
+      "shooting": 85
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Kingsley",
+    "last_name": "Coman",
+    "team_id": "Bayern Munich",
+    "shirt_number": 11,
+    "attributes": {
+      "speed": 91,
+      "dribbling": 89,
+      "shooting": 84
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Serge",
+    "last_name": "Gnabry",
+    "team_id": "Bayern Munich",
+    "shirt_number": 7,
+    "attributes": {
+      "dribbling": 87,
+      "speed": 88,
+      "shooting": 85
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "Nuri",
+    "last_name": "Şahin",
+    "team_id": "Borussia Dortmund"
+  },
+  {
+    "type": "player",
+    "first_name": "Gregor",
+    "last_name": "Kobel",
+    "team_id": "Borussia Dortmund",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 89,
+      "positioning": 88,
+      "distribution": 86
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Mats",
+    "last_name": "Hummels",
+    "team_id": "Borussia Dortmund",
+    "shirt_number": 15,
+    "attributes": {
+      "defense": 88,
+      "positioning": 90,
+      "strength": 87
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Florian",
+    "last_name": "Wirtz",
+    "team_id": "Borussia Dortmund",
+    "shirt_number": 38,
+    "attributes": {
+      "dribbling": 91,
+      "speed": 88,
+      "shooting": 84
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "Sebastian",
+    "last_name": "Hoeneß",
+    "team_id": "VfB Stuttgart"
+  },
+  {
+    "type": "player",
+    "first_name": "Alexander",
+    "last_name": "Nübel",
+    "team_id": "VfB Stuttgart",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 87,
+      "positioning": 86,
+      "distribution": 85
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Serhou",
+    "last_name": "Guirassy",
+    "team_id": "VfB Stuttgart",
+    "shirt_number": 30,
+    "attributes": {
+      "speed": 88,
+      "shooting": 86,
+      "dribbling": 85
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Waldemar",
+    "last_name": "Anton",
+    "team_id": "VfB Stuttgart",
+    "shirt_number": 2,
+    "attributes": {
+      "defense": 87,
+      "positioning": 87,
+      "strength": 88
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "Marco",
+    "last_name": "Rose",
+    "team_id": "RB Leipzig"
+  },
+  {
+    "type": "player",
+    "first_name": "Peter",
+    "last_name": "Gulácsi",
+    "team_id": "RB Leipzig",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 88,
+      "positioning": 87,
+      "distribution": 86
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Benjamin",
+    "last_name": "Šeško",
+    "team_id": "RB Leipzig",
+    "shirt_number": 9,
+    "attributes": {
+      "shooting": 87,
+      "speed": 89,
+      "strength": 86
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Lois",
+    "last_name": "Openda",
+    "team_id": "RB Leipzig",
+    "shirt_number": 7,
+    "attributes": {
+      "speed": 90,
+      "shooting": 86,
+      "dribbling": 84
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "Luis",
+    "last_name": "Enrique",
+    "team_id": "Barcelona"
+  },
+  {
+    "type": "player",
+    "first_name": "Marc-André",
+    "last_name": "ter Stegen",
+    "team_id": "Barcelona",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 91,
+      "positioning": 89,
+      "distribution": 88
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Gavi",
+    "last_name": "Páez",
+    "team_id": "Barcelona",
+    "shirt_number": 6,
+    "attributes": {
+      "passing": 88,
+      "dribbling": 87,
+      "vision": 87
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Pedri",
+    "last_name": "González",
+    "team_id": "Barcelona",
+    "shirt_number": 8,
+    "attributes": {
+      "dribbling": 90,
+      "passing": 89,
+      "vision": 88
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Lewandowski",
+    "last_name": "Robert",
+    "team_id": "Barcelona",
+    "shirt_number": 9,
+    "attributes": {
+      "shooting": 90,
+      "strength": 87,
+      "positioning": 89
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Ferran",
+    "last_name": "Torres",
+    "team_id": "Barcelona",
+    "shirt_number": 11,
+    "attributes": {
+      "speed": 88,
+      "shooting": 85,
+      "dribbling": 85
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "Carlo",
+    "last_name": "Ancelotti",
+    "team_id": "Real Madrid"
+  },
+  {
+    "type": "player",
+    "first_name": "Andriy",
+    "last_name": "Lunin",
+    "team_id": "Real Madrid",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 89,
+      "positioning": 88,
+      "distribution": 87
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Eder",
+    "last_name": "Militão",
+    "team_id": "Real Madrid",
+    "shirt_number": 3,
+    "attributes": {
+      "defense": 90,
+      "speed": 88,
+      "strength": 89
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Luka",
+    "last_name": "Modrić",
+    "team_id": "Real Madrid",
+    "shirt_number": 10,
+    "attributes": {
+      "passing": 89,
+      "dribbling": 86,
+      "vision": 88
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Vinícius",
+    "last_name": "Júnior",
+    "team_id": "Real Madrid",
+    "shirt_number": 20,
+    "attributes": {
+      "dribbling": 93,
+      "speed": 93,
+      "shooting": 86
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Kylian",
+    "last_name": "Mbappé",
+    "team_id": "Real Madrid",
+    "shirt_number": 9,
+    "attributes": {
+      "speed": 94,
+      "shooting": 91,
+      "dribbling": 90
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "Marcelino",
+    "last_name": "García Toral",
+    "team_id": "Villarreal"
+  },
+  {
+    "type": "player",
+    "first_name": "Pepe",
+    "last_name": "Reina",
+    "team_id": "Villarreal",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 86,
+      "positioning": 87,
+      "distribution": 84
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Samuel",
+    "last_name": "Chukwueze",
+    "team_id": "Villarreal",
+    "shirt_number": 21,
+    "attributes": {
+      "dribbling": 89,
+      "speed": 90,
+      "shooting": 85
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "Luis",
+    "last_name": "de la Fuente",
+    "team_id": "Atletico de Madrid"
+  },
+  {
+    "type": "player",
+    "first_name": "Jan",
+    "last_name": "Oblak",
+    "team_id": "Atletico de Madrid",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 93,
+      "positioning": 92,
+      "distribution": 85
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Antoine",
+    "last_name": "Griezmann",
+    "team_id": "Atletico de Madrid",
+    "shirt_number": 8,
+    "attributes": {
+      "shooting": 87,
+      "dribbling": 86,
+      "speed": 83
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Ángel",
+    "last_name": "Correa",
+    "team_id": "Atletico de Madrid",
+    "shirt_number": 10,
+    "attributes": {
+      "speed": 88,
+      "shooting": 85,
+      "dribbling": 86
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "Manuel",
+    "last_name": "Pellegrini",
+    "team_id": "Real Betis"
+  },
+  {
+    "type": "player",
+    "first_name": "Claudio",
+    "last_name": "Bravo",
+    "team_id": "Real Betis",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 85,
+      "positioning": 86,
+      "distribution": 84
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Nabil",
+    "last_name": "Fekir",
+    "team_id": "Real Betis",
+    "shirt_number": 8,
+    "attributes": {
+      "shooting": 86,
+      "dribbling": 87,
+      "passing": 86
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "Claudio",
+    "last_name": "Giraldez",
+    "team_id": "Celta Vigo"
+  },
+  {
+    "type": "player",
+    "first_name": "Iván",
+    "last_name": "Villar",
+    "team_id": "Celta Vigo",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 85,
+      "positioning": 84,
+      "distribution": 83
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Iago",
+    "last_name": "Aspas",
+    "team_id": "Celta Vigo",
+    "shirt_number": 10,
+    "attributes": {
+      "shooting": 86,
+      "speed": 83,
+      "dribbling": 85
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "Imanol",
+    "last_name": "Alguacil",
+    "team_id": "Real Sociedad"
+  },
+  {
+    "type": "player",
+    "first_name": "Álex",
+    "last_name": "Remiro",
+    "team_id": "Real Sociedad",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 86,
+      "positioning": 86,
+      "distribution": 85
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Mikel",
+    "last_name": "Oyarzabal",
+    "team_id": "Real Sociedad",
+    "shirt_number": 10,
+    "attributes": {
+      "shooting": 86,
+      "speed": 85,
+      "dribbling": 86
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "José",
+    "last_name": "Luis",
+    "team_id": "Getafe"
+  },
+  {
+    "type": "player",
+    "first_name": "David",
+    "last_name": "Soria",
+    "team_id": "Getafe",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 84,
+      "positioning": 84,
+      "distribution": 82
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "Fernando",
+    "last_name": "Merche",
+    "team_id": "Athletic Club"
+  },
+  {
+    "type": "player",
+    "first_name": "Unai",
+    "last_name": "Simón",
+    "team_id": "Athletic Club",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 86,
+      "positioning": 85,
+      "distribution": 84
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Nico",
+    "last_name": "Williams",
+    "team_id": "Athletic Club",
+    "shirt_number": 10,
+    "attributes": {
+      "dribbling": 90,
+      "speed": 92,
+      "shooting": 85
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Íñigo",
+    "last_name": "Martínez",
+    "team_id": "Athletic Club",
+    "shirt_number": 5,
+    "attributes": {
+      "defense": 87,
+      "positioning": 88,
+      "strength": 86
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "Jagoba",
+    "last_name": "Arrasate",
+    "team_id": "Osasuna"
+  },
+  {
+    "type": "player",
+    "first_name": "Sergio",
+    "last_name": "Herrera",
+    "team_id": "Osasuna",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 85,
+      "positioning": 84,
+      "distribution": 82
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Ante",
+    "last_name": "Budimir",
+    "team_id": "Osasuna",
+    "shirt_number": 10,
+    "attributes": {
+      "shooting": 84,
+      "strength": 86,
+      "positioning": 84
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "Luis",
+    "last_name": "García Cruz",
+    "team_id": "Espanyol"
+  },
+  {
+    "type": "player",
+    "first_name": "Fernando",
+    "last_name": "López",
+    "team_id": "Espanyol",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 83,
+      "positioning": 83,
+      "distribution": 81
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "Rubén",
+    "last_name": "Baraja",
+    "team_id": "Valencia"
+  },
+  {
+    "type": "player",
+    "first_name": "Giorgi",
+    "last_name": "Mamardashvili",
+    "team_id": "Valencia",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 85,
+      "positioning": 84,
+      "distribution": 83
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Hugo",
+    "last_name": "Duro",
+    "team_id": "Valencia",
+    "shirt_number": 19,
+    "attributes": {
+      "shooting": 84,
+      "speed": 84,
+      "strength": 85
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "Michel",
+    "last_name": "Sánchez",
+    "team_id": "Girona"
+  },
+  {
+    "type": "player",
+    "first_name": "Juan",
+    "last_name": "Carlos",
+    "team_id": "Girona",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 84,
+      "positioning": 83,
+      "distribution": 82
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "Iñigo",
+    "last_name": "Pérez",
+    "team_id": "Rayo Vallecano"
+  },
+  {
+    "type": "player",
+    "first_name": "Stole",
+    "last_name": "Dimitrievski",
+    "team_id": "Rayo Vallecano",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 83,
+      "positioning": 82,
+      "distribution": 81
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "Javier",
+    "last_name": "Ramírez",
+    "team_id": "Sevilla FC"
+  },
+  {
+    "type": "player",
+    "first_name": "Bono",
+    "last_name": "Keylor Navas",
+    "team_id": "Sevilla FC",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 84,
+      "positioning": 83,
+      "distribution": 81
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "Luis",
+    "last_name": "García Plaza",
+    "team_id": "Alaves"
+  },
+  {
+    "type": "player",
+    "first_name": "Fernando",
+    "last_name": "Pacheco",
+    "team_id": "Alaves",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 83,
+      "positioning": 82,
+      "distribution": 80
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "Eder",
+    "last_name": "Sarabia",
+    "team_id": "Elche"
+  },
+  {
+    "type": "player",
+    "first_name": "Edgar",
+    "last_name": "Badia",
+    "team_id": "Elche",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 82,
+      "positioning": 81,
+      "distribution": 79
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "Jagoba",
+    "last_name": "Arrasate",
+    "team_id": "Mallorca"
+  },
+  {
+    "type": "player",
+    "first_name": "Dominik",
+    "last_name": "Greif",
+    "team_id": "Mallorca",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 83,
+      "positioning": 82,
+      "distribution": 80
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "Lucas",
+    "last_name": "Alcaraz",
+    "team_id": "Levante"
+  },
+  {
+    "type": "player",
+    "first_name": "Aitor",
+    "last_name": "Fernández",
+    "team_id": "Levante",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 81,
+      "positioning": 80,
+      "distribution": 78
+    }
+  },
+  {
+    "type": "manager",
+    "first_name": "Javier",
+    "last_name": "Aguirre",
+    "team_id": "Real Oviedo"
+  },
+  {
+    "type": "player",
+    "first_name": "Iván",
+    "last_name": "Cuéllar",
+    "team_id": "Real Oviedo",
+    "shirt_number": 1,
+    "attributes": {
+      "reflexes": 80,
+      "positioning": 79,
+      "distribution": 77
+    }
+  },
+  {
+    "type": "player",
+    "first_name": "Eden",
+    "last_name": "Hazard",
+    "team_id": "Chelsea",
+    "shirt_number": 10,
+    "attributes": {
+      "shooting": 85,
+      "speed": 84,
+      "strength": 83
+    }
+  }
+]

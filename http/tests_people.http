@@ -1,0 +1,54 @@
+###
+# POST PEOPLE ( player )
+POST http://localhost:8000/people
+Content-Type: application/json
+
+{
+    "type": "player",
+    "first_name": "John",
+    "last_name": "Doe",
+    "shirt_number": 10
+}
+
+###
+# POST PEOPLE ( manager )
+POST http://localhost:8000/people
+Content-Type: application/json
+
+{
+    "type": "manager",
+    "first_name": "Jane",
+    "last_name": "Smith"
+}
+
+###
+# GET ALL PEOPLE
+GET http://localhost:8000/people
+
+###
+# GET PEOPLE BY wrong ID
+GET http://localhost:8000/people/69c7f5fa9e4b9caab5ff6cc
+
+
+### 
+# UPDATE PEOPLE ( player )
+PUT http://localhost:8000/people/69c7f7b071dab6682766086d
+Content-Type: application/json
+
+{
+  "team_id" : "INVALID UPDATE CAMP"
+}
+
+###
+# UPDATE PEOPLE ( manager )
+PUT http://localhost:8000/people/69c7f7f771dab6682766086e
+Content-Type: application/json
+
+{
+    "invalid_camp": "69c7f5fa9e4b9caab5ffa4"
+}
+
+
+###
+# DELETE PEOPLE
+DELETE http://localhost:8000/people/69c7f7f771dab6682766086e

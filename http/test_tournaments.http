@@ -1,0 +1,44 @@
+###
+# POST TOURNAMENT
+POST http://localhost:8000/tournaments
+Content-Type: application/json
+
+{
+    "name": "Eredivise",
+    "country": "Netherlands"
+}
+
+
+###
+# GET ALL TOURNAMENTS
+GET http://localhost:8000/tournaments
+
+###
+# GET TOURNAMENT BY ID
+GET http://localhost:8000/tournaments/69c7e3d4d65391ee17709616
+
+###
+# UPDATE TOURNAMENT
+PUT http://localhost:8000/tournaments/69c7e3d4d65391ee1770961
+Content-Type: application/json
+
+{
+    "name": "Eredivisie",
+    "country": "Netherlands"
+}
+
+###
+# UPDATE TOURNAMENT ( failure )
+PUT http://localhost:8000/tournaments/69c7e3d4d65391ee17709616
+Content-Type: application/json
+
+{
+    "winner_team_id": "64c7e3d4d65391ee17709"
+}
+
+
+###
+# DELETE TOURNAMENT
+DELETE http://localhost:8000/tournaments/69c7edcc83d10dec2706a39e
+
+

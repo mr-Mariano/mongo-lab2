@@ -1,0 +1,242 @@
+[
+  {
+    "tournament_id": "Bundesliga",
+    "match_day": 1,
+    "date": "2024-01-13",
+    "home_team": {
+      "team_id": "Bayern Munich",
+      "name": "Bayern Munich",
+      "goals": 3
+    },
+    "away_team": {
+      "team_id": "Borussia Dortmund",
+      "name": "Borussia Dortmund",
+      "goals": 2
+    },
+    "mvp_player_id": "Jamal Musiala",
+    "stats": {
+      "possession": { "home": 62, "away": 38 },
+      "shots_on_target": { "home": 8, "away": 5 },
+      "corners": { "home": 5, "away": 2 },
+      "fouls": { "home": 12, "away": 14 }
+    },
+    "player_stats": [
+      {
+        "player_id": "Jamal Musiala",
+        "goals": 2,
+        "assists": 0,
+        "shots_on_target": 6,
+        "minutes_played": 90
+      },
+      {
+        "player_id": "Kingsley Coman",
+        "goals": 1,
+        "assists": 1,
+        "shots_on_target": 3,
+        "minutes_played": 87
+      },
+      {
+        "player_id": "Florian Wirtz",
+        "goals": 1,
+        "assists": 0,
+        "shots_on_target": 4,
+        "minutes_played": 90
+      },
+      {
+        "player_id": "Gregor Kobel",
+        "goals": 0,
+        "assists": 0,
+        "shots_on_target": 0,
+        "minutes_played": 90
+      }
+    ]
+  },
+  {
+    "tournament_id": "Bundesliga",
+    "match_day": 2,
+    "date": "2024-01-20",
+    "home_team": {
+      "team_id": "VfB Stuttgart",
+      "name": "VfB Stuttgart",
+      "goals": 2
+    },
+    "away_team": {
+      "team_id": "RB Leipzig",
+      "name": "RB Leipzig",
+      "goals": 1
+    },
+    "mvp_player_id": "Serhou Guirassy",
+    "stats": {
+      "possession": { "home": 55, "away": 45 },
+      "shots_on_target": { "home": 7, "away": 4 },
+      "corners": { "home": 4, "away": 3 },
+      "fouls": { "home": 10, "away": 11 }
+    },
+    "player_stats": [
+      {
+        "player_id": "Serhou Guirassy",
+        "goals": 1,
+        "assists": 1,
+        "shots_on_target": 5,
+        "minutes_played": 90
+      },
+      {
+        "player_id": "Waldemar Anton",
+        "goals": 1,
+        "assists": 0,
+        "shots_on_target": 1,
+        "minutes_played": 90
+      },
+      {
+        "player_id": "Benjamin Šeško",
+        "goals": 1,
+        "assists": 0,
+        "shots_on_target": 3,
+        "minutes_played": 90
+      }
+    ]
+  },
+  {
+    "tournament_id": "La Liga",
+    "match_day": 1,
+    "date": "2024-01-14",
+    "home_team": {
+      "team_id": "Barcelona",
+      "name": "Barcelona",
+      "goals": 4
+    },
+    "away_team": {
+      "team_id": "Real Madrid",
+      "name": "Real Madrid",
+      "goals": 1
+    },
+    "mvp_player_id": "Pedri González",
+    "stats": {
+      "possession": { "home": 68, "away": 32 },
+      "shots_on_target": { "home": 12, "away": 3 },
+      "corners": { "home": 7, "away": 1 },
+      "fouls": { "home": 8, "away": 16 }
+    },
+    "player_stats": [
+      {
+        "player_id": "Pedri González",
+        "goals": 1,
+        "assists": 2,
+        "shots_on_target": 4,
+        "minutes_played": 88
+      },
+      {
+        "player_id": "Gavi Páez",
+        "goals": 1,
+        "assists": 1,
+        "shots_on_target": 3,
+        "minutes_played": 75
+      },
+      {
+        "player_id": "Lewandowski Robert",
+        "goals": 2,
+        "assists": 0,
+        "shots_on_target": 7,
+        "minutes_played": 90
+      },
+      {
+        "player_id": "Marc-André ter Stegen",
+        "goals": 0,
+        "assists": 0,
+        "shots_on_target": 0,
+        "minutes_played": 90
+      }
+    ]
+  },
+  {
+    "tournament_id": "Bundesliga",
+    "match_day": 3,
+    "date": "2024-01-27",
+    "home_team": {
+      "team_id": "Bayern Munich",
+      "name": "Bayern Munich",
+      "goals": 5
+    },
+    "away_team": {
+      "team_id": "VfB Stuttgart",
+      "name": "VfB Stuttgart",
+      "goals": 1
+    },
+    "mvp_player_id": "Kingsley Coman",
+    "stats": {
+      "possession": { "home": 71, "away": 29 },
+      "shots_on_target": { "home": 14, "away": 2 },
+      "corners": { "home": 9, "away": 0 },
+      "fouls": { "home": 6, "away": 13 }
+    },
+    "player_stats": [
+      {
+        "player_id": "Kingsley Coman",
+        "goals": 2,
+        "assists": 1,
+        "shots_on_target": 5,
+        "minutes_played": 90
+      },
+      {
+        "player_id": "Serge Gnabry",
+        "goals": 2,
+        "assists": 0,
+        "shots_on_target": 4,
+        "minutes_played": 82
+      },
+      {
+        "player_id": "Jamal Musiala",
+        "goals": 1,
+        "assists": 1,
+        "shots_on_target": 3,
+        "minutes_played": 76
+      },
+      {
+        "player_id": "Alexander Nübel",
+        "goals": 0,
+        "assists": 0,
+        "shots_on_target": 0,
+        "minutes_played": 90
+      }
+    ]
+  },
+  {
+    "tournament_id": "La Liga",
+    "match_day": 2,
+    "date": "2024-01-21",
+    "home_team": {
+      "team_id": "Atletico de Madrid",
+      "name": "Atletico de Madrid",
+      "goals": 2
+    },
+    "away_team": {
+      "team_id": "Villarreal",
+      "name": "Villarreal",
+      "goals": 2
+    },
+    "mvp_player_id": "Pedri González",
+    "stats": {
+      "possession": { "home": 48, "away": 52 },
+      "shots_on_target": { "home": 6, "away": 7 },
+      "corners": { "home": 3, "away": 4 },
+      "fouls": { "home": 15, "away": 12 }
+    },
+    "player_stats": [
+      {
+        "player_id": "Pedri González",
+        "goals": 0,
+        "assists": 1,
+        "shots_on_target": 2,
+        "minutes_played": 90
+      },
+      {
+        "player_id": "Lewandowski Robert",
+        "goals": 2,
+        "assists": 0,
+        "shots_on_target": 4,
+        "minutes_played": 90
+      }
+    ]
+  }
+]
+

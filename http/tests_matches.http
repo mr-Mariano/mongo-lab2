@@ -1,0 +1,98 @@
+###
+# POST MATCHES
+###
+POST http://localhost:8000/matches
+Content-Type: application/json
+
+{
+  "tournament_id": "Bundesliga",
+  "match_day": 32,
+  "date": "2026-03-26",
+  "home_team": {
+    "team_id": "Bayern Munich",
+    "name": "Bayern Munich",
+    "goals": 5
+  },
+  "away_team": {
+    "team_id": "Borussia Dortmund",
+    "name": "BVB",
+    "goals": 0
+  },
+  "mvp_player_id": "Manuel Neuer",
+  "stats": {
+    "possession": {
+      "home": 67,
+      "away": 33
+    },
+    "shots_on_target": {
+      "home": 24,
+      "away": 10
+    },
+    "corners": {
+      "home": 18,
+      "away": 3
+    },
+    "fouls": {
+      "home": 4,
+      "away": 19
+    }
+  },
+  "player_stats": []
+}
+
+
+###
+# GET MATCHES
+GET http://localhost:8000/matches
+
+
+### GET MATCH BY ID
+GET http://localhost:8000/matches/69c807646b195b9579bbca9
+
+
+###
+# UPDATE MATCH
+PUT http://localhost:8000/matches/69c8098c6b195b9579bbca9a
+Content-Type: application/json
+
+{
+  "mvp_player_id" : "Manuel Neuer"
+}
+
+
+###
+# UPDATE WITH INVALID ID FORMAT
+PUT http://localhost:8000/matches/69c8098c6b195b9579bbca9a
+Content-Type: application/json
+
+{
+    "mvp_player_id": "Robert Lewandowski"
+}
+
+###
+# UPDATE WITH NON-EXISTENT ID
+PUT http://localhost:8000/matches/000000000000000000000000
+Content-Type: application/json
+
+{
+    "goals": -5
+}
+
+###
+# UPDATE WITH INVALID FIELD
+PUT http://localhost:8000/matches/69c8098c6b195b9579bbca9a
+Content-Type: application/json
+
+{
+    "invalid_field": "some_value",
+    "another_wrong_field": 123
+}
+
+
+###
+# DELETE MATCH
+DELETE http://localhost:8000/matches/69c807646b195b9579bbca
+
+###
+#GET /matches
+GET http://localhost:8000/matches?limit=1&skip=1

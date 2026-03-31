@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Bundesliga",
+    "country": "Germany",
+    "teams": [
+      "Bayern Munich",
+      "Borussia Dortmund",
+      "VfB Stuttgart",
+      "RB Leipzig",
+      "TSG Hoffenheim",
+      "Bayer Leverkusen",
+      "Eintracht Frankfurt",
+      "SC Freiburg",
+      "1. FC Union Berlin",
+      "FC Augsburg",
+      "Mainz",
+      "Hamburg SV",
+      "Borussia Monchengladbach",
+      "Werder Bremen",
+      "FC Cologne",
+      "St Pauli",
+      "VfL Wolfsburg",
+      "1. FC Heidenheim 1846"
+    ],
+    "total_match_days": 34,
+    "winner_team_id": null
+  },
+  {
+    "name": "La Liga",
+    "country": "Spain",
+    "teams": [
+      "Barcelona",
+      "Real Madrid",
+      "Villarreal",
+      "Atletico de Madrid",
+      "Real Betis",
+      "Celta Vigo",
+      "Real Sociedad",
+      "Getafe",
+      "Athletic Club",
+      "Osasuna",
+      "Espanyol",
+      "Valencia",
+      "Girona",
+      "Rayo Vallecano",
+      "Sevilla FC",
+      "Alaves",
+      "Elche",
+      "Mallorca",
+      "Levante",
+      "Real Oviedo"
+    ],
+    "total_match_days": 38,
+    "winner_team_id": null
+  },
+  {
+    "name": "Premier League",
+    "country": "England",
+    "teams": [
+    ],
+    "total_match_days": 38,
+    "winner_team_id": null
+  }
+]

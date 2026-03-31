@@ -1,0 +1,281 @@
+
+docker run --name mongodb -d -p 27017:27017 mongo
+
+For me this command is saying to docker, to run mogodb with the name of "mongodb" using the image of mongo
+and do it detached from the container it self, and I am able to connect to that container via my port 27017 which is "linked"
+with the port 27017 that is where mongodb container is running
+
+----
+
+List of 6 original queries:
+• Retrieve all the information for a given matchday in a tournament.
+• Display a summary of all important stats of a certain player.
+• Show matches where a certain player was the MVP
+• Retrieve all matches played by a certain team in a tournament
+• Retrieve all matches played by a certain team.
+• Display stats for a player by a certain match.
+
+------
+
+Insertion in Teams in Collections
+
+The original structure designed during Lab 1 , was the following:
+
+{
+    _id: ObjectId,
+    name: String,
+    country: String,
+    tournaments: [ObjectId], // M:N reference
+    playerIds: [ObjectId], // 1:N reference
+    matchIds: [ObjectId], // 2:N reference
+    stats: {
+    wins: Number,
+    draws: Number,
+    losses: Number,
+    goalsFor: Number,
+    goalsAgainst: Number
+}
+
+The refinement in the structure result:
+[
+    {
+        name : "FCBayern Munchen",
+        country : "Germany",
+        stats : {
+            wins : 0,
+            draws : 0,
+            losses : 0,
+            goals_in_favor: 0
+            goals_against : 0
+        }
+    },
+    ...
+]
+
+I decided to modified the original structure I designed because of different reasons,
+first removing tournaments field because there's no real purpose of having that reference as the tournaments collections
+will already have a reference to teams participating in it, and not real benefit I identified of having this bi-direction,
+just increasing complexity in the database in terms of maintain consistency.
+
+I also decided to remove the matches field array because the query of getting the information about matches of
+a team can directly be performed with a query to the "matches" collections trough different queries.
+
+Get all matches:
+    - db.matches.find({ name : <team_to_find_matches>})
+
+Get all matches in a specific tournament:
+    - db.matches.find({ name : <team_to_find_matches>, tournament : <specific_tournament_name> })
+
+Also removed players array field mainly because the players and other people working for a specific team can
+be obtained from a query that filters by "team" attribute in the players collections.
+
+db.players.find({ team : <team_to_find>})
+
+
+----
+
+Insertion of Tournaments in Collections
+
+The original structure designed during Lab 1 , was the following:
+
+{
+    _id: ObjectId,
+    name: String,
+    country: String,
+    season: String,
+    teams: [ObjectId], // references to teams (M:N)
+    matches: [ObjectId], // references to matches (1:N)
+    totalMatchDays: Number,
+    winnerTeamId: ObjectId // reference
+}
+
+The refinement in the structure result:
+
+[
+    {
+        name: "La Liga",
+        country: "Spain",
+        teams: [ObjectId("team1"), ObjectId("team2")],
+        matches: [ObjectId("match1"), ObjectId("match2")],
+        total_match_days: 38,
+        winner_team_id: ObjectId()
+    },
+    ...
+]
+
+In the original design, a "season" field was created because of the initial tought of mainting some attribute
+that referenced to the current campaign running, but this attribute was bad allocated in this collection, mainly because
+a tournament will need to be repeated multiple times only changing the attribute of season everytime a new campaing
+starts, and in the matches collections, having a reference to the tournament would not directly indicate the season it was
+played, so the season attribute was moved , and now only present in the matches collection.
+
+Removal of the array attribute of matches was also done for performance concerns, as obtaining all matches
+regarding a specifc tournamnet could be obtained with a direct query to the matches collections and having the bi-directional
+relationship only put at risk the consistency in the data.
+
+- Find matches of a specific tournament
+    db.matches.find( tournament : <tournament_id> })
+
+- Find matches of a specific tournament in a specific season
+    db.matches.find( tournament : <tournament_id> , season : <season_to_look_for> })
+
+----
+
+Reflection
+
+So is falcon the one running, and when it start running it connects to the mongo container running
+in my machine, and by adding routes via .add_route() method, I can then pass on the path like
+"/teams", "/tournaments", "/people", "/matches", and the second argument in each
+route is the Resource which is the one that has a connection with the db and performs the operations.
+
+So If I do a GET -> http://localhost:8000/teams
+My app receives the request and looks in its routes table, when it find the
+    app.add_route("/teams", TeamResource)
+it goes inside the TeamResource and send the request to the corresponding one,
+if there is no method like on_get it will return 404 maybe. But if it exists, it will execute that method.
+
+So in essense is really in the Resources ( request handlers ) where the operations are performed.
+
+That's why abstracting away an api.py
+that well, everytime the same url base is http://localhost:8000 ,
+what it changes is the path, so I can create in the api.py
+generic get, post, get_by_id, etc.. that just take the base url , and I pass the path as parameter
+
+so like the url is created and I can do a reques.post( urlConstructed, data ) and that request.post will
+trigger the Resource and the method inside that resource, that will be accompained with the data.
+
+____
+
+Insertion of People in Collections
+
+The original structure designed during Lab 1 , was the following:
+
+{
+    _id: ObjectId,
+    type: "player", // discriminator
+    firstName: String,
+    lastName: String,
+    teamId: ObjectId,
+    shirtNumber: Number, // only for players
+    attributes: [ // Attribute Pattern
+        {
+            name: String,
+            value: Number
+        }
+    ],
+    mvpMatches: [ObjectId] // reference to matches
+}
+
+The refinement in the structure result:
+
+{
+    type: "player" | manager, // discriminator
+    first_name: String,
+    last_ame: String,
+    team_id: ObjectId | or can't be,
+    shirt_number: Number , // only for players
+    attributes: [ // Attribute Pattern
+        {
+            name: String,
+            value: Number
+        }
+    ]
+}
+
+
+
+In the original design, there was a direct reference to matches id's
+but for consistency I remove it, as the matches will store reference to the players along with
+some players stats in that match like:
+    playerStats: [ // Bucket Pattern
+        {
+        playerId: ObjectId,
+        goals: Number,
+        assists: Number,
+        shotsOnTarget: Number,
+        minutesPlayed: Number
+        }
+    ]
+
+And also a reference to the id of the MVP player, so storing the bi-reference here in players
+didn't aggregate anything to the project.
+
+But Right Now I will do
+ - person model
+ - person resource
+ - person service
+ - person validator
+
+
+----
+Insertion of Matches in Collections
+
+The original structure designed during Lab 1 , was the following:
+
+{
+    _id: ObjectId,
+    tournamentId: ObjectId, // reference
+    matchDay: Number,
+    date: Date,
+    homeTeam: {
+        teamId: ObjectId,
+        name: String, // duplicated for faster reads
+        goals: Number
+    },
+    awayTeam: {
+        teamId: ObjectId,
+        name: String, // duplicated
+        goals: Number
+    },
+    mvpPlayerId: ObjectId, // reference
+    stats: {
+        possession: { home: Number, away: Number },
+        shotsOnTarget: { home: Number, away: Number },
+        corners: { home: Number, away: Number },
+        fouls: { home: Number, away: Number }
+    },
+    playerStats: [ // Bucket Pattern
+        {
+        playerId: ObjectId,
+        goals: Number,
+        assists: Number,
+        shotsOnTarget: Number,
+        minutesPlayed: Number
+    }]
+
+}
+
+The refinement in the structure result:
+
+{
+    tournament_id: ObjectId, // reference
+    match_day: Number,
+    date: Date,
+    home_team: {
+        team_id: ObjectId,
+        name: String, // duplicated for faster reads
+        goals: Number
+    },
+    away_team: {
+        team_id: ObjectId,
+        name: String, // duplicated
+        goals: Number
+    },
+    mvp_player_id: ObjectId, // reference
+    stats: {
+        possession: { home: Number, away: Number },
+        shotsOnTarget: { home: Number, away: Number },
+        corners: { home: Number, away: Number },
+        fouls: { home: Number, away: Number }
+    },
+    player_stats: [ // Bucket Pattern
+        {
+        playerId: ObjectId,
+        goals: Number,
+        assists: Number,
+        shotsOnTarget: Number,
+        minutesPlayed: Number
+    }]
+}
+
+
